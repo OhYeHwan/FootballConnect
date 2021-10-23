@@ -1,4 +1,4 @@
-import { Form, Button, Card, Alert } from 'react-bootstrap';
+import { Form, Button, Card, Alert, Container } from 'react-bootstrap';
 import {useRef, useState} from 'react';
 import { useAuth } from '../hooks/useAuth';
 import { Link, useHistory } from 'react-router-dom';
@@ -34,7 +34,9 @@ export default function Signup() {
 
     return (
         <>
-            <Card>
+            <Container
+             className="d-flex align-items-center justify-content-center" style={{maxWidth:"400px"}}>
+            <Card className="w-100 h-100 mt-2">
                 <Card.Body>
                     <h2 className="text-center mb-4">Sign Up</h2>
                     
@@ -56,7 +58,9 @@ export default function Signup() {
                     </Form>
                 </Card.Body>
             </Card>
-            <div className="w-100 text-center mt-2">
+            
+             </Container>
+             <div className="w-100 text-center mt-2">
                 Already have an account? <Link to="/login">Login</Link>
             </div>
         </>

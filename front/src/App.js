@@ -9,47 +9,30 @@ import AuthProvider from './hooks/useAuth';
 import ForgotPassword from './components/ForgotPassword';
 import UpdateProfile from './components/UpdateProfile';
 import PrivateRoute from './components/PrivateRoute';
+import ViewProfile from './components/View_Profile';
 
 function App() {
 
   return (
-    // <Router>
-      
-    //   <div className="App">
-    //     <Navbar/>
-    //     <div className="content">
-    //       <Switch>
-    //         <Route exact path="/">
-    //           <Main/>
-    //         </Route>
-    //         <Route path="/login">
-    //           <Login/>
-    //         </Route>
-    //         <Route path="*">
-    //           <Notfound/>  
-    //         </Route>
-    //       </Switch>
-    //     </div>
-    //   </div>
-    // </Router>
-    
-      <Container 
-      className="d-flex align-items-center justify-content-center"
-      style={{minHeight: "70vh"}}>
-        <div className="w-100" style={{maxWidth: "400px"}}>
+      <Container>
+        {/* <div className="w-100"> */}
           <Router>
-            <AuthProvider>
+
+          <AuthProvider>
+          <Navbar/>
+
               <Switch>
-                <PrivateRoute exact path="/" component={Main}/>
+                <Route exact path="/" component={Main}/>
                 <PrivateRoute exact path="/update-profile" component={UpdateProfile}/>
                 <Route path="/signup" component={Signup}/>
                 <Route path="/login" component={Login}/>
                 <Route path="/forgot-password" component={ForgotPassword}/>
+                <Route path="/profile" component={ViewProfile}/>
                 <Route path="*" component={Notfound} />
               </Switch>
             </AuthProvider>
           </Router>
-        </div>
+        {/* </div> */}
       </Container>
     
     
