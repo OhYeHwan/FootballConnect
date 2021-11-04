@@ -5,33 +5,28 @@
   height: 72px;
   background-color: headerGreen;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
-.section {
-  display: flex;
-  align-items: center;
-}
-
-.title {
+.logo {
   font-family: "Jua";
-  font-size: 25px;
+  font-size: 24px;
   color: makerWhite;
-  margin: 0;
+  margin-left: 30%;
 }
 
 .menu {
   display: flex;
-  padding: 0 0 0 400px;
-  margin: 0;
+  list-style: none;
+  font-size: 18px;
+  padding: 8px 12px;
+  margin-bottom: 0;
+  margin-right: 20%;
+
+  color: makerWhite;
 }
 
 li {
-  font-size: 18px;
-  color: makerWhite;
-  list-style: none;
-  padding: 8px 12px;
-  margin: 0 8px;
-  cursor: pointer;
+  margin: 8px 24px;
 }
