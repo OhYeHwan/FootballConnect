@@ -2,10 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
 
 .header {
-  height: 72px;
-  background-color: headerGreen;
   display: flex;
-  justify-content: space-between;
+  height: 72px;
+  width: 100%;
+  background-color: headerGreen;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
   align-items: center;
 }
 
@@ -13,20 +18,57 @@
   font-family: "Jua";
   font-size: 24px;
   color: makerWhite;
-  margin-left: 30%;
+}
+
+.space {
+  width: 360px;
 }
 
 .menu {
   display: flex;
   list-style: none;
   font-size: 18px;
-  padding: 8px 12px;
+  padding: 0;
   margin-bottom: 0;
-  margin-right: 20%;
-
   color: makerWhite;
 }
 
 li {
   margin: 8px 24px;
+  margin-right: 0;
+}
+
+.toggleBtn {
+  display: none;
+  position: absolute;
+  color: headerGreen;
+  top: 12px;
+  left: 32px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 44px;
+    background-color: makerWhite;
+    align-content: center;
+  }
+
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .logo {
+    color: headerGreen;
+  }
+
+  .menu {
+    display: none;
+    color: headerGreen;
+  }
+
+  .toggleBtn {
+    display: block;
+  }
 }
