@@ -38,32 +38,27 @@ input {
   color: makerWhite;
 }
 
-.kakao {
-  width: 100%;
-  border: none;
-  height: 56px;
-  margin-bottom: 8px;
-  border-radius: 5%;
-  background-color: #fce51e;
-}
-
-.naver {
-  width: 100%;
-  border: none;
-  height: 56px;
-  margin-bottom: 8px;
-  border-radius: 5%;
-  background-color: #28d111;
-  color: makerWhite;
-}
-
+.kakao,
+.facebook,
 .google {
   width: 100%;
   border: none;
   height: 56px;
   margin-bottom: 8px;
-  border-radius: 5%;
+  border-radius: 10px;
+}
+
+.kakao {
+  background-color: #fce51e;
+}
+
+.facebook {
   background-color: #1877f2;
+  color: makerWhite;
+}
+
+.google {
+  background-color: #979797;
   color: makerWhite;
 }
 
@@ -116,6 +111,12 @@ input {
   font-size: 20px;
 }
 
+.icon_red {
+  margin: 10px;
+  font-size: 20px;
+  color: #d32f2f;
+}
+
 .link_half {
   overflow: hidden;
   position: relative;
@@ -127,6 +128,11 @@ input {
   width: 50%;
   height: 40px;
   text-align: center;
+  cursor: pointer;
+}
+
+.link_half_div:hover {
+  color: headerGreen;
 }
 
 .link_half:after {
