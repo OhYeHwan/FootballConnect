@@ -33,7 +33,7 @@ input {
   border: none;
   height: 56px;
   margin-bottom: 8px;
-  border-radius: 5%;
+  border-radius: 10px;
   background-color: headerGreen;
   color: makerWhite;
 }

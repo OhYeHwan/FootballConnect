@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./header.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Header = (props) => (
   <header className={styles.header}>
@@ -11,7 +12,9 @@ const Header = (props) => (
         <li className={styles.menu_item}>내주변</li>
         <li className={styles.menu_item}>긴급구함</li>
         <li className={styles.menu_item}>더보기</li>
-        <li className={styles.menu_item}>로그인</li>
+        <Link to="login" className={styles.menu_item}>
+          로그인
+        </Link>
       </ul>
       <FontAwesomeIcon icon={faBars} className={styles.toggleBtn} />
     </section>

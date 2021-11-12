@@ -32,12 +32,22 @@
   font-size: 18px;
   padding: 0;
   margin: 0;
-  color: makerWhite;
+  color: #e3e3e3;
 }
 
 .menu_item {
   margin: 8px 24px;
   margin-right: 0;
+  color: #e3e3e3;
+  text-decoration: none;
+}
+
+.menu_item:hover {
+  margin: 8px 24px;
+  margin-right: 0;
+  text-decoration: none;
+  color: makerWhite;
+  cursor: pointer;
 }
 
 .toggleBtn {
