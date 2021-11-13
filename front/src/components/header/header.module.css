@@ -1,0 +1,87 @@
+@value headerGreen, makerWhite, makerGreen from "../../common/colors.css";
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
+.header {
+  display: flex;
+  background-color: headerGreen;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  width: 1024px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  position: absolute;
+  left: 31px;
+  font-family: "Jua";
+  font-size: 24px;
+  color: makerWhite;
+}
+
+.menu {
+  position: absolute;
+  right: 31px;
+  display: flex;
+  list-style: none;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  color: #e3e3e3;
+}
+
+.menu_item {
+  margin: 8px 24px;
+  margin-right: 0;
+  color: #e3e3e3;
+  text-decoration: none;
+}
+
+.menu_item:hover {
+  margin: 8px 24px;
+  margin-right: 0;
+  text-decoration: none;
+  color: makerWhite;
+  cursor: pointer;
+}
+
+.toggleBtn {
+  display: none;
+  position: absolute;
+  color: headerGreen;
+  top: 12px;
+  left: 32px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 44px;
+    background-color: makerWhite;
+    position: relative;
+  }
+
+  .logo {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 95px;
+    height: 20px;
+    margin: 0 0 0 -47.5px;
+    color: headerGreen;
+  }
+
+  .menu {
+    display: none;
+    color: headerGreen;
+  }
+
+  .toggleBtn {
+    display: block;
+  }
+}

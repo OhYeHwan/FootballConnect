@@ -1,0 +1,15 @@
+@value footerGrey,makerWhite, makerGreen from "../../common/colors.css";
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
+.footer {
+  width: 100%;
+  background-color: footerGrey;
+}
+
+.title {
+  color: makerWhite;
+  text-align: right;
+  font-family: "Jua";
+  padding: 0.5em;
+  margin: 0.5em;
+}

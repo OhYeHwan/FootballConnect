@@ -1,0 +1,147 @@
+@value headerGreen, makerWhite, makerGreen from "../../common/colors.css";
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
+input {
+  border: none;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.login {
+  position: absolute;
+  width: 350px;
+  height: 600px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.logo {
+  text-align: center;
+  left: 31px;
+  font-family: "Jua";
+  font-size: 24px;
+  color: headerGreen;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.loginBtn {
+  width: 100%;
+  border: none;
+  height: 56px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  background-color: headerGreen;
+  color: makerWhite;
+}
+
+.kakao,
+.facebook,
+.google {
+  width: 100%;
+  border: none;
+  height: 56px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+}
+
+.kakao {
+  background-color: #fce51e;
+}
+
+.facebook {
+  background-color: #1877f2;
+  color: makerWhite;
+}
+
+.google {
+  background-color: #979797;
+  color: makerWhite;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spaceOr {
+  height: 56px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.spaceOr span {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 10;
+  width: 50px;
+  height: 40px;
+  margin: 0 0 0 -24px;
+  background-color: #ffffff;
+  text-align: center;
+  line-height: 56px;
+  color: rgba(0, 0, 0, 0.38);
+}
+
+.spaceOr:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.inputBox {
+  display: flex;
+  border: 2px solid gainsboro;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.icon {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.icon_red {
+  margin: 10px;
+  font-size: 20px;
+  color: #d32f2f;
+}
+
+.link_half {
+  overflow: hidden;
+  position: relative;
+  margin-top: 9px;
+}
+
+.link_half_div {
+  display: inline-block;
+  width: 50%;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.link_half_div:hover {
+  color: headerGreen;
+}
+
+.link_half:after {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  width: 1px;
+  height: 11px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
