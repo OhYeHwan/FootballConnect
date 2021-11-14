@@ -4,12 +4,14 @@ import Header from "../header/header";
 import styles from "./main.module.css";
 import MatchList from "../matchList/matchList";
 
+import Matches from "../../static/matches";
+
 const Main = () => {
   return (
     <section className={styles.main}>
       <Header />
       <div className={styles.container}>
-        <MatchList></MatchList>
+        <MatchList matches={Matches}></MatchList>
       </div>
       <Footer />
     </section>

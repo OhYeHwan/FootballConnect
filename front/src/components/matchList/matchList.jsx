@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { List, ListItem } from "@mui/material";
+import MatchListItem from "../matchListItem/matchListItem";
 
-const MatchList = (props) => {
+const MatchList = ({ matches }) => {
+  const [matchs, setMatchs] = useState(matches);
+
   return (
     <List>
-      <ListItem>Item 01</ListItem>
-      <ListItem>Item 02</ListItem>
-      <ListItem>Item 03</ListItem>
+      <ListItem>
+        <MatchListItem match={matchs[0]} />
+      </ListItem>
+      <ListItem>
+        <MatchListItem match={matchs[1]} />
+      </ListItem>
+      <ListItem>
+        <MatchListItem match={matchs[2]} />
+      </ListItem>
     </List>
   );
 };

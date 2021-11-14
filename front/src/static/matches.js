@@ -1,4 +1,4 @@
-export const matches = [
+const matches = [
   {
     id: "1",
     title: "탄천변 모란 경기장 A",
@@ -30,3 +30,5 @@ export const matches = [
     state: "신청가능",
   },
 ];
+
+export default matches;
