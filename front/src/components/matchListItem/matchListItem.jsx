@@ -1,23 +1,34 @@
 import React, { useState } from "react";
 import { Paper, Grid, Typography } from "@mui/material";
+import Dday from "../dDay/dDay";
+import MatchState from "../matchState/matchState";
+import Button from "@mui/material/Button";
+import MatchTitle from "../matchTitle/matchTitle";
 
 const MatchListItem = (props) => {
   const [match, setMatch] = useState(props.match);
 
   return (
     <Paper>
-      <Grid container spacing={3}>
-        <Grid item>D-1</Grid>
-        <Grid item>
-          <Typography component="h5" variant="h5">
-            {match.data}
-          </Typography>
-          <Typography component="h4" variant="h4">
-            {match.title}
-          </Typography>
+      <Button variant="text">
+        <Grid
+          container
+          direction="row"
+          justifyContent="cent"
+          alignItems="center"
+          spacing={3}
+        >
+          <Grid item>
+            <Dday>1</Dday>
+          </Grid>
+          <Grid item>
+            <MatchTitle match={match} />
+          </Grid>
+          <Grid item>
+            <MatchState>{match.state}</MatchState>
+          </Grid>
         </Grid>
-        <Grid item>{match.state}</Grid>
-      </Grid>
+      </Button>
     </Paper>
   );
 };
