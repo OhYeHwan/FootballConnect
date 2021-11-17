@@ -1,17 +1,15 @@
-import React, { useState } from "react";
-import { List, ListItem, Container } from "@mui/material";
+import React from "react";
+import { List, ListItem } from "@mui/material";
 import MatchListItem from "../matchListItem/matchListItem";
 
 const MatchList = ({ matches }) => {
-  const [matchs, setMatchs] = useState(matches);
-
-  const matchesItems = matchs.map((match) => {
+  const matchesItems = matches.map((match) => {
     return (
-      <Container>
-        <ListItem>
+      <List key={match.id}>
+        <ListItem sx={{ justifyContent: "center", padding: 0 }}>
           <MatchListItem match={match} />
         </ListItem>
-      </Container>
+      </List>
     );
   });
 

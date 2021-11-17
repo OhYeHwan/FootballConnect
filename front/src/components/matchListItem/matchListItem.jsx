@@ -1,33 +1,26 @@
-import React, { useState } from "react";
-import { Paper, Grid, Typography } from "@mui/material";
-import Dday from "../dDay/dDay";
+import React from "react";
+import { Paper } from "@mui/material";
+import MatchDday from "../matchDday/matchDday";
 import MatchState from "../matchState/matchState";
 import Button from "@mui/material/Button";
 import MatchTitle from "../matchTitle/matchTitle";
+import styles from "./matchListItem.module.css";
 
-const MatchListItem = (props) => {
-  const [match, setMatch] = useState(props.match);
-
+const MatchListItem = ({ match }) => {
   return (
-    <Paper>
-      <Button variant="text">
-        <Grid
-          container
-          direction="row"
-          justifyContent="cent"
-          alignItems="center"
-          spacing={3}
-        >
-          <Grid item>
-            <Dday>1</Dday>
-          </Grid>
-          <Grid item>
+    <Paper className={styles.paper}>
+      <Button variant="text" color="success" className={styles.btn}>
+        <div className={styles.container}>
+          <div>
+            <MatchDday>1</MatchDday>
+          </div>
+          <div>
             <MatchTitle match={match} />
-          </Grid>
-          <Grid item>
+          </div>
+          <div>
             <MatchState>{match.state}</MatchState>
-          </Grid>
-        </Grid>
+          </div>
+        </div>
       </Button>
     </Paper>
   );
