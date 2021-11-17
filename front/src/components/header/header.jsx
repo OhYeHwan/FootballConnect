@@ -9,7 +9,7 @@ const Header = (props) => (
     <section className={styles.container}>
       <h1 className={styles.logo}>용병구함</h1>
       <ul className={styles.menu}>
-        <li className={styles.menu_item}>내주변</li>
+        <li className={styles.menu_item}>팀구함</li>
         <li className={styles.menu_item}>긴급구함</li>
         <li className={styles.menu_item}>더보기</li>
         <Link to="login" className={styles.menu_item}>

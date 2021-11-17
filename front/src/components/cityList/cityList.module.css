@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.item {
+  padding: 8.5px;
+}
+
+.item:hover {
+  color: rgb(106, 193, 132);
+  cursor: pointer;
+}
+
+.selected {
+  padding: 8.5px;
+  color: rgb(106, 193, 132);
+  cursor: default;
+}
